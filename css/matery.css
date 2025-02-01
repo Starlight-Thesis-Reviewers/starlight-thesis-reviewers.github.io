@@ -241,7 +241,8 @@ mark {
 }
 
 .bg-color {
-    background-image: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%);
+    /* background-image: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%); */
+    background-image: linear-gradient(to right, #fb5458 0%, #6292E9 100%);
 }
 
 .text-color {
@@ -551,8 +552,9 @@ header .go-back i {
 }
 
 .bg-cover:after {
-    -webkit-animation: rainbow 60s infinite;
-    animation: rainbow 60s infinite;
+    /* -webkit-animation: rainbow 60s infinite;
+    animation: rainbow 60s infinite; */
+    background: rgba(251, 84, 88, .75);
 }
 
 .bg-cover:before,
@@ -575,7 +577,8 @@ header .go-back i {
 
 .bg-cover .title {
     font-size: 4rem;
-    line-height: 1.2em;
+    font-weight: bold;
+    /* line-height: 1.2em; */
     margin-bottom: 20px;
     position: relative;
 }
