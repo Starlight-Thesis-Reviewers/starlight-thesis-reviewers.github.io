@@ -291,13 +291,14 @@ header nav .brand-span {
 }
 
 header .brand-logo .logo-img {
-    height: 45px;
+    height: 3rem;
     vertical-align: middle;
     padding-bottom: 6px;
 }
 
 header .brand-logo .logo-span {
-    font-size: 1.6rem;
+    font-size: 1.1rem;
+    vertical-align: top;
 }
 
 /*修改顶部 logo 的文字垂直对齐为 top，避免默认 middle 看起来偏下*/
@@ -1144,7 +1145,7 @@ article .article-tags .chip {
 }
 
 #artDetail .reprint {
-    margin: 15px 0 0.4rem;
+    margin: 15px 1.5rem 0.4rem;
     padding: 0.5rem 0.8rem;
     border: 1px solid #eee;
     line-height: 2;
