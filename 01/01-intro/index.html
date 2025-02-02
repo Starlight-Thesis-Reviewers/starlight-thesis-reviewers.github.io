@@ -41,7 +41,7 @@
             <div class="brand-logo">
                 <a href="/" class="waves-effect waves-light">
                     
-                    <img src="/medias/avatar.jpg" class="logo-img" alt="LOGO">
+                    <img src="/medias/avatar.png" class="logo-img" alt="LOGO">
                     
                     <span class="logo-span">圣翔毕业论文审查组</span>
                 </a>
@@ -130,7 +130,7 @@
 
     <div class="mobile-head bg-color">
         
-        <img src="/medias/avatar.jpg" class="logo-img circle responsive-img">
+        <img src="/medias/avatar.png" class="logo-img circle responsive-img">
         
         <div class="logo-name">圣翔毕业论文审查组</div>
         <div class="logo-desc">
@@ -401,6 +401,70 @@
 
         
 
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user"> 原文作者: </i>
+                </span>
+                <span class="reprint-info">
+                    さぼてんぐ
+                    
+                        <a href="https://twitter.com/saboteng23" rel="external nofollow noreferrer" target="_blank">
+                        <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                    
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fa-solid fa-link">原文链接: </i>
+                </span>
+                <span class="reprint-info">
+                    
+                        <a href="https://note.com/starlight_paper/n/na83c3368c894" rel="external nofollow noreferrer" target="_blank">https://note.com/starlight_paper/n/na83c3368c894</a>
+                    
+                </span>
+            </div>
+            
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fa-solid fa-book-open-reader"> 译者: </i>
+                </span>
+                <span class="reprint-info">
+                    涩谷观音
+                    
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本文一切版权归原文作者所有，如有侵权请联系删除。<br>
+                    本記事の著作権は原文作者に帰属します。著作権の侵害などが認められました際はご連絡ください。
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+        
+
         
 
         <div class="card-content article-card-content">
@@ -522,59 +586,6 @@
                 
             </div>
             <hr/>
-
-            
-
-    <div class="reprint" id="reprint-statement">
-        
-            <div class="reprint__author">
-                <span class="reprint-meta" style="font-weight: bold;">
-                    <i class="fas fa-user">
-                        文章作者:
-                    </i>
-                </span>
-                <span class="reprint-info">
-                    <a href="/about" rel="external nofollow noreferrer">不知名长颈鹿</a>
-                </span>
-            </div>
-            <div class="reprint__type">
-                <span class="reprint-meta" style="font-weight: bold;">
-                    <i class="fas fa-link">
-                        文章链接:
-                    </i>
-                </span>
-                <span class="reprint-info">
-                    <a href="https://starlight-thesis-reviewers.github.io/01/01-intro/">https://starlight-thesis-reviewers.github.io/01/01-intro/</a>
-                </span>
-            </div>
-            <div class="reprint__notice">
-                <span class="reprint-meta" style="font-weight: bold;">
-                    <i class="fas fa-copyright">
-                        版权声明:
-                    </i>
-                </span>
-                <span class="reprint-info">
-                    本博客所有文章除特別声明外，均采用
-                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
-                    许可协议。转载请注明来源
-                    <a href="/about" target="_blank">不知名长颈鹿</a>
-                    !
-                </span>
-            </div>
-        
-    </div>
-
-    <script async defer>
-      document.addEventListener("copy", function (e) {
-        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
-        M.toast({html: toastHTML})
-      });
-
-      function navToReprintStatement() {
-        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
-      }
-    </script>
-
 
 
             <div class="tag_share" style="display: block;">
