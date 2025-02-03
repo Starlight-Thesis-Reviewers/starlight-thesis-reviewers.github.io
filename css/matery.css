@@ -4,12 +4,24 @@
     .container {
         width: 95%;
     }
+
+    header .brand-logo .logo-span {
+        font-size: 1rem;
+    }
+
+    .bg-cover .title {
+        font-size: 2rem;
+    }
 }
 
 /*中等屏幕下(平板类)的样式*/
 @media only screen and (min-width: 600px) and (max-width: 992px) {
     .container {
         width: 90%;
+    }
+
+    .bg-cover .title {
+        font-size: 4rem;
     }
 }
 
@@ -30,6 +42,14 @@
         width: 90%;
         margin: 0 auto;
         max-width: 1250px;
+    }
+
+    header .brand-logo .logo-span {
+        font-size: 1.5rem;
+    }
+
+    .bg-cover .title {
+        font-size: 4rem;
     }
 }
 
@@ -296,7 +316,6 @@ header .brand-logo .logo-img {
 }
 
 header .brand-logo .logo-span {
-    font-size: 1.1rem;
     vertical-align: top;
 }
 
@@ -576,7 +595,6 @@ header .go-back i {
 }
 
 .bg-cover .title {
-    font-size: 4rem;
     font-weight: bold;
     /* line-height: 1.2em; */
     margin-bottom: 20px;
@@ -895,6 +913,11 @@ article .card {
 article .card-image {
     background-color: #222;
     border-radius: 8px;
+}
+
+article .card-image .card-title{
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 article .card-image img {
