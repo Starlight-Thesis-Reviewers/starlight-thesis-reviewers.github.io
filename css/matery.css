@@ -241,7 +241,6 @@ mark {
 }
 
 .bg-color {
-    /* background-image: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%); */
     background-image: linear-gradient(to right, #fb5458 0%, #6292E9 100%);
 }
 
@@ -1346,10 +1345,11 @@ thead {
     height: 80px;
     margin: 10px 0 50px -20px;
     padding: 21px 10px;
-    background-color: #ff5722;
+    background-color: #fb5458;
     color: #fff;
     font-size: 1.8rem;
     font-weight: 600;
+    text-align: center;
 }
 
 #cd-timeline .year a {
@@ -1375,7 +1375,7 @@ thead {
 #cd-timeline .day {
     position: relative;
     padding: 8px 10px;
-    background-color: #ffa726;
+    background-color: #6292E9;
     color: #fff;
     font-size: 1.2rem;
     font-weight: 500;
@@ -1396,8 +1396,12 @@ thead {
     top: 0;
     left: 18px;
     height: 100%;
-    width: 4px;
-    background: #0f9d58;
+}
+
+.content-timeline {
+    width: 100%;
+    background-size: contain;
+    background-image: url(/medias/archive-bg.png);
 }
 
 @media only screen and (min-width: 900px) {
