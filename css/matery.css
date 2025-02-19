@@ -1198,7 +1198,8 @@ article .article-tags .chip {
     text-indent: 0.2rem;
 }
 
-#articleContent a {
+#articleContent a,
+#about-translators a {
     padding: 0 2px;
     color: #42b983;
     font-weight: 500;
@@ -1713,6 +1714,7 @@ thead {
     padding: 3.8rem 1.5rem 0.8rem 1.5rem;
 }
 
+#about-translators .title,
 .post-charts,
 .title,
 .my-projects .title,
@@ -1720,6 +1722,16 @@ thead {
 .my-gallery .title {
     font-size: 2rem;
     margin-bottom: 2.25rem;
+}
+
+#about-translators .translator-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#about-translators ul li {
+    list-style-type: '✨';
+    margin-left: 1rem;
 }
 
 .my-projects .info {
