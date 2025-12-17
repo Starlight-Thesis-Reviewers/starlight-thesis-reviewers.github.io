@@ -15,7 +15,7 @@
 /* 基础样式 */
 .line,
 .revue-dialogue .line {
-    flex: inherit; 
+    flex: 1; 
 }
 
 .character,
