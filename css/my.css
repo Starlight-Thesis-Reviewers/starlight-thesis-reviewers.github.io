@@ -1,1 +1,60 @@
 /* Here is your custom css styles. */
+:root {
+    --aijo-: #fb5659;
+    --kagu-: #6292e9;
+    --maya-: #CBC6CC;
+    --hoshi-: #95caee;
+    --mahi-: #61bf99;
+    --nana-: #fdd162;
+    --kuro-: #fe9952;
+    --ishi-: #8c67aa;
+    --hana-: #e08596;
+    --kirin-: #7D5B32;
+}
+
+/* 基础样式 */
+.line,
+.revue-dialogue .line {
+    flex: 1; 
+}
+
+.character,
+.revue-dialogue .characters {
+    min-width: 8em; /* 固定宽度，确保对齐 */
+    text-align: right; /* 人名右对齐 */
+}
+
+/* 单角色颜色 */
+.character[data-role="aijo"] { color: var(--aijo-); }
+.character[data-role="kagu"] { color: var(--kagu-); }
+.character[data-role="maya"] { color: var(--maya-); }
+.character[data-role="hoshi"] { color: var(--hoshi-); }
+.character[data-role="mahi"] { color: var(--mahi-); }
+.character[data-role="nana"] { color: var(--nana-); }
+.character[data-role="kuro"] { color: var(--kuro-); }
+.character[data-role="ishi"] { color: var(--ishi-); }
+.character[data-role="hana"] { color: var(--hana-); }
+.character[data-role="kirin"] { color: var(--kirin-); }
+
+/* 多角色基础样式 */
+.characters {
+    display: inline-block;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+/* 多角色渐变颜色 */
+.characters[data-role="futakao"] { 
+    background-image: linear-gradient(180deg, var(--ishi-) 30%, var(--hana-) 70%);
+}
+
+/* 角色台词容器 */
+.revue-dialogue {
+    display: flex;
+    align-items: flex-start;
+    margin: 0.5em 0;
+}

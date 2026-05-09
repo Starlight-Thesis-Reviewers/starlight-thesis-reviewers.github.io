@@ -310,6 +310,16 @@
         border-radius: 40px;
     }
 
+    .friend-all {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .friend-all .friend-div {
+        margin-left: 0 !important;
+    }
+
     .friend-all .tag-post {
         margin-bottom: 30px;
     }
@@ -517,6 +527,27 @@
                             </div>
                         </div>
                         
+                        
+                        <div class="col s12 m6 l4 friend-div" data-aos="zoom-in-up">
+                            <div class="card frind-card4">
+                                <div class="frind-ship">
+                                    <div class="title">
+                                        <img src="/favicon-starlight.svg" alt="img">
+                                        <div>
+                                            <h1 class="friend-name">Starlight Gatherer</h1>
+                                            <p style="position: relative;top: -35px;">少女歌剧资源站</p>
+                                        </div>
+                                    </div>
+                                    <div class="friend-button">
+                                        <a href="https://www.starlight-gatherer.top" target="_blank"
+                                            class="button button-glow button-rounded button-caution">
+                                            前往
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
                     </div>
                     
                 </article>
@@ -540,14 +571,6 @@
         </div>
     </div>
 </main>
-
-<script>
-    $(function () {
-        $('#friends-link').masonry({
-            itemSelector: '.friend-div'
-        });
-    });
-</script>
 
 
     <footer class="page-footer bg-color">
