@@ -1,0 +1,1222 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="关于舞台的并行性与再现性的一项考察——通过比较动画《少女☆歌剧 Revue Starlight》的各个作品, 圣翔毕业论文审查组">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>关于舞台的并行性与再现性的一项考察——通过比较动画《少女☆歌剧 Revue Starlight》的各个作品 | 圣翔毕业论文审查组</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon-starlight.svg">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/avatar.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">圣翔毕业论文审查组</span>
+                </a>
+            </div>
+            
+
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags/" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>关键词</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories/" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>章节</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives/" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about/" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends/" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/avatar.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">圣翔毕业论文审查组</div>
+        <div class="logo-desc">
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			关键词
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			章节
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://assets.st-note.com/production/uploads/images/124170342/rectangle_large_type_2_4a610c61b7092308a14f44cf47574b12.png')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">关于舞台的并行性与再现性的一项考察——通过比较动画《少女☆歌剧 Revue Starlight》的各个作品</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E5%89%A7%E5%9C%BA%E7%89%88/">
+                                <span class="chip bg-color">剧场版</span>
+                            </a>
+                        
+                            <a href="/tags/%E8%A7%A3%E9%87%8A%C2%B7%E8%AF%BB%E8%A7%A3/">
+                                <span class="chip bg-color">解释·读解</span>
+                            </a>
+                        
+                            <a href="/tags/%E6%97%B6%E9%97%B4%E8%BD%B4/">
+                                <span class="chip bg-color">时间轴</span>
+                            </a>
+                        
+                            <a href="/tags/TV%E7%89%88/">
+                                <span class="chip bg-color">TV版</span>
+                            </a>
+                        
+                            <a href="/tags/%E5%86%8D%E7%94%9F%E4%BA%A7%E6%80%BB%E9%9B%86%E7%AF%87/">
+                                <span class="chip bg-color">再生产总集篇</span>
+                            </a>
+                        
+                            <a href="/tags/%E7%9A%86%E6%9D%80%E7%9A%84Revue/">
+                                <span class="chip bg-color">皆杀的Revue</span>
+                            </a>
+                        
+                            <a href="/tags/%E4%B8%96%E7%95%8C%E7%BA%BF/">
+                                <span class="chip bg-color">世界线</span>
+                            </a>
+                        
+                            <a href="/tags/%E5%88%97%E8%BD%A6-%E7%BA%BF%E8%B7%AF/">
+                                <span class="chip bg-color">列车/线路</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%C2%A7-13-Project-Revue-Starlight/" class="post-category">
+                                § 13 Project Revue Starlight
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2026-06-09
+                </div>
+                
+
+                
+
+                
+
+                
+
+                
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user"> 原文作者: </i>
+                </span>
+                <span class="reprint-info">
+                    隠世左近
+                    
+                        <a href="https://x.com/To_Kakuriyo" rel="external nofollow noreferrer" target="_blank">
+                        <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                    
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fa-solid fa-link">原文链接: </i>
+                </span>
+                <span class="reprint-info">
+                    
+                        <a href="https://note.com/starlight_paper/n/n417543fda792" rel="external nofollow noreferrer" target="_blank">https://note.com/starlight_paper/n/n417543fda792</a>
+                    
+                </span>
+            </div>
+            
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fa-solid fa-pencil"> 译者: </i>
+                </span>
+                <span class="reprint-info">
+                    雨霁
+                    
+                        <a href="https://space.bilibili.com/20596744" rel="external nofollow noreferrer" target="_blank">
+                        <i class="fa-brands fa-bilibili"></i>
+                        </a>
+                    
+                </span>
+            </div>
+
+            
+                <div class="reprint__author">
+                    <span class="reprint-meta" style="font-weight: bold;">
+                        <i class="fa-solid fa-ruler"> 校对: </i>
+                    </span>
+                    <span class="reprint-info">
+                        星河
+                        
+                    </span>
+                </div>
+            
+
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本文一切版权归原文作者所有，如有侵权请联系删除。<br>
+                    本記事の著作権はその著作者に帰属し、権利侵害となる場合はご連絡ください。
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1>引言——研究对象</h1>
+<p>本文旨在论述动画系列作品《少女☆歌剧 Revue Starlight》中各部作品之间的并行性与再现性。下文将依次将这三部作品称为 TV 版、总集篇与剧场版。此外，在统称上述三部作品时，则称为“三部曲”。</p>
+<p>此外，《少女☆歌剧 Revue Starlight》虽有舞台剧版本，但本文不将其纳入考察范围。</p>
+<p>构成动画系列《少女☆歌剧 Revue Starlight》的重要要素之一，是作为综合艺术的戏剧。若从现实社会的一般状况对戏剧加以概观，同一作品被多次上演的情况普遍存在。而且，其中的大多数一方面通过遵循剧本、演出等事先约定来保持某种程度的再现性，另一方面又因无法实现完全相同的上演而具有一种并行性。本文将考察戏剧中的这种并行性与再现性，在《少女☆歌剧 Revue Starlight》三部曲整体中是如何呈现的。之所以进行这一尝试，是因为我们认为这将有助于从新的侧面阐明作品的性质。</p>
+<h1>各自独立的演出</h1>
+<p>本文所要探讨的假设是：三部曲各自的时间轴和世界线是否并不一致，从而呈现出一种仿佛是不同的演出场次那样的并行状态。</p>
+<p>仅就三部曲中直接提及的部分而言，负责剧本的樋口达人曾经做过如下描述：“在‘舞台’这一要素之中，本就包含了超越当时、超越时间这样的要素”<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>。又如剧中插曲《Super Star Spectacle》中唱到“过去就是未来，未来就是现在”，可见作品十分重视时间的流动。</p>
+<p>然而，从时间流逝的角度来看，TV 版与总集篇之间存在着内容差异极大的部分。</p>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>各 Revue 曲歌词的有无、其间隙台词的有无、演唱分配及的曲调差异。</p>
+</li>
+<li class="lvl-2">
+<p>“骄傲”与“渴望”两场 Revue 的顺序差异</p>
+</li>
+<li class="lvl-2">
+<p>“命运的 Revue”（2V2）Revue 曲的差异</p>
+</li>
+<li class="lvl-2">
+<p>TV 版第 7 话 大场奈奈 VS 天堂真矢 的 Revue 场景与总集篇对应部分的台词差异</p>
+</li>
+<li class="lvl-2">
+<p>TV 版第 9 话中星见纯那与大场奈奈眺望第 99 届圣翔祭舞台道具的场景，与总集篇相应部分的台词差异</p>
+</li>
+<li class="lvl-2">
+<p>TV 版第 12 话进入“星罪的 Revue”的场景，与总集篇相应部分的台词差异</p>
+</li>
+</ul>
+<p>这些差异，正如 TV 版第 7 话所说“因为舞台是活的，就算是相同的 Starlight，舞台也不可能是一模一样的”；以及在 TV 版第 9 话“羁绊的 Revue”和总集篇对应部分中，爱城华恋所说“不会有同样的自己与舞台。舞台都只有一场，我们会在一瞬燃尽，惹人喜爱、无法替代、又有价值的舞台。因为只有一瞬的燃烧，舞台少女每当踏上舞台 都会涅槃重生”。这些话语在本集中鲜明地呈现了戏剧所具有的并行性与再现性的特征，并且描述了三部曲中的各部作品为彼此独立的演出场次。以开头“我再生产”开启的“再生产”总集篇，虽然描绘的是与 TV 版相同的少女歌剧，却不可能成为与 TV 版完全相同的少女歌剧。也就是说，TV 版与总集篇并非同一时间轴或世界线上的少女歌剧，而应该被认为是单独描绘的不同的少女歌剧。</p>
+<p>此外，还可举出这样一个例子：在 TV 版与总集篇中，幼年爱城华恋与神乐光告别的场景原本是以相同方式描绘的，但在剧场版中却被描绘成发生在完全不同的地点。在 TV 版与总集篇中，两人都是在“区立わくわく公园”的滑梯上交谈的；而剧场版里，她们却在同一公园的一片空无一物的平地上对话。虽然对话内容几乎一致，发生地点却截然不同。</p>
+<p>在 TV 版第 12 话和总集篇对应部分中，爱城华恋与神乐光说“我们的命运舞台，从很久以前就开始了”。这里的“很久以前”，可以认为是指她们幼年观看音乐剧《The Starlight Gather》之时，或是归途中在东京塔互换发饰、并“交换了‘命运的舞台’的门票”之时。无论哪一种情况，在这段离别的场景中，她们的“命运的舞台”都已然开始。</p>
+<p>作为故事主干的“命运的舞台”被以不同的方式描绘，表明剧场版处在不同于 TV 版与总集篇的时间轴与世界线上；也就是说，它是具有并行性的、另一场不同的演出场次<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup>。</p>
+<p>总集篇中描绘了一个名为“RONDO RONDO RONDO”的舞台，舞台上基本只有身着校服的大场奈奈与长颈鹿登场，并且这个舞台独立于故事本身的展开。由于该舞台整体色调为蓝色，故下文将其称为“蓝色舞台”。接下来，本文将探讨这些“蓝色舞台”作为时间轴或世界线，亦或是作为时间序列，各自处于什么位置。</p>
+<p>在总集篇中插入的新增部分，除了〈蓝色舞台〉之外，还包括了大场奈奈与长颈鹿对话的舞台（对话），以及身着舞台服的神乐光独白的舞台（独白）。</p>
+<p>另外，我想在此与大家共享一个前提性认识：这些〈蓝色舞台〉（对话）（独白）的特点是，原则上它们都被放置在 revue 及类似表演形式的描写之后，并引用那些 revue 中的歌词。下面通过表格整理了各场面的描写。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">名称</th>
+<th style="text-align:center">主要内容・重要台词</th>
+<th style="text-align:center">奈奈（光）的服装</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">蓝 1</td>
+<td style="text-align:center">位于蓝色舞台上的奈奈<br/>《繁星的对白》的歌词<br>“在等着哟”（奈奈）</td>
+<td style="text-align:center">校服</td>
+</tr>
+<tr>
+<td style="text-align:center">蓝 2</td>
+<td style="text-align:center">位于存在于“地下第一星空”的奈奈和长颈鹿<br/>《直到将世界化作灰烬（movie ver.）》的歌词</td>
+<td style="text-align:center">校服</td>
+</tr>
+<tr>
+<td style="text-align:center">蓝  3</td>
+<td style="text-align:center">位于舞台装置“鸟 BIRD 2018”旁边的奈奈和长颈鹿<br/>《骄傲与傲慢（movie ver.）》的歌词</td>
+<td style="text-align:center">校服</td>
+</tr>
+<tr>
+<td style="text-align:center">蓝 4</td>
+<td style="text-align:center">位于舞台装置“眼镜遗迹”“魔♡球♡盘 棒球猫”“宿怨馆”旁边的奈奈和长颈鹿<br/>《The Star Knows ～Another～》<br/>《恋之魔球（第 7 局）》<br/>《宵・花开之歌》的歌词<br/>“真正的演出五分钟后开始”（长颈鹿）</td>
+<td style="text-align:center">校服</td>
+</tr>
+<tr>
+<td style="text-align:center">蓝 5</td>
+<td style="text-align:center">站立在幕后的奈奈<br/>《群星的牵绊（movie ver.）》的歌词</td>
+<td style="text-align:center">校服</td>
+</tr>
+<tr>
+<td style="text-align:center">蓝 6</td>
+<td style="text-align:center">无人的舞台，观众席上的华恋的上衣、武器和发饰<br/>奈奈的声音从画面之外传来<br/>《Star Diamond（movie ver.）》的歌词</td>
+<td style="text-align:center">无描写</td>
+</tr>
+<tr>
+<td style="text-align:center">对话 1</td>
+<td style="text-align:center">位于摘星的 Revue 舞台上的奈奈和长颈鹿<br/>《Starlight（movie ver.）》的歌词</td>
+<td style="text-align:center">校服</td>
+</tr>
+<tr>
+<td style="text-align:center">对话 2</td>
+<td style="text-align:center">位于蓝色舞台上的奈奈和长颈鹿<br/>传达了“舞台少女之死”和“wi(l)d-screen baroque”</td>
+<td style="text-align:center">Revue服</td>
+</tr>
+<tr>
+<td style="text-align:center">蓝 7</td>
+<td style="text-align:center">与蓝 1 描写相同<br/>“我们已经在舞台之上。等着你呢，小光”（奈奈）</td>
+<td style="text-align:center">校服（校服）</td>
+</tr>
+<tr>
+<td style="text-align:center">独白</td>
+<td style="text-align:center">位于倒在沙漠中的东京塔上的光<br/>《再生讃美曲》的歌词<br/>“我们的舞台，还没有结束。我们已立于舞台之上”（光）</td>
+<td style="text-align:center">（Revue服）</td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+</tbody>
+</table>
+<div style="text-align: center">表 总集篇各场面的描述（主办方基于笔者资料制作）</div>
+<p>另外，下图左侧展示的是各场景在作品中的插入顺序，右侧则是将其按照可视为按照时间顺序进行重新排列后的结果。图中以左侧顺序描绘的“蓝色舞台”等场景，如果不进行调整，从各 Revue 内剧中歌的歌词与其后“蓝色舞台”等处大场奈奈的台词之间的对应关系，以及相关场景的发言地点等角度来看，内容顺序显得不自然，因此对其进行了重新排序。</p>
+<p><img src="/local-imgs/13-07/%E5%85%B3%E4%BA%8E%E8%88%9E%E5%8F%B0%E7%9A%84%E5%B9%B6%E8%A1%8C%E6%80%A7%E4%B8%8E%E5%86%8D%E7%8E%B0%E6%80%A7%E7%9A%84%E4%B8%80%E9%A1%B9%E8%80%83%E5%AF%9F%E9%80%9A%E8%BF%87%E6%AF%94%E8%BE%83%E5%8A%A8%E7%94%BB%E5%B0%91%E5%A5%B3%E6%AD%8C%E5%89%A7RevueStarlight%E7%9A%84%E5%90%84%E4%B8%AA%E4%BD%9C%E5%93%81-%E5%9C%BA%E6%99%AF%E7%9A%84%E9%87%8D%E6%96%B0%E6%8E%92%E5%BA%8F.webp" alt=""></p>
+<div style="text-align: center">图：场景的重新排序（由円あすか根据笔者资料制作）</div>
+<p>具体地进行考察。</p>
+<p>在蓝 1中，身着校服的大场奈奈说：“那天确切见到的，绽放的星光闪耀”。地点是在〈蓝色舞台〉上。由于这里引用了《繁星的对白》的歌词，因此可以判断蓝 1 是插入在《繁星的对白》之后的场景。此外，从描写的相似性以及蓝 1的描写在叙述上不自然地中断这一点来看，可以认为蓝 1 与蓝 7 是连续的。</p>
+<p>接着来看对话 1。穿着制服的大场奈奈引用了《Starlight（movie ver.）》中的歌词“一直期望的星星，就是两人的 Starlight”，而地点又位于新章“摘星的 Revue”的舞台上，由此可知对话 1 是一个安排在“新章”之后的场景。</p>
+<p>进一步看对话 2。身着 Revue 服装的大场奈奈说“我们已立于舞台之上”，并与长颈鹿一起提及“舞台少女之死”以及作为剧场版内容的“狂野银幕巴洛克”。据此可知，对话 2位于舞台少女之死之后、独白之前。地点是在蓝色舞台上。</p>
+<p>在独白中，身着 Revue 服的神乐光说道：“向没有选择的过去，静静地献上的赞美歌”“我们已立于舞台之上”。由于这里引用了《再生赞美曲》的歌词，因此这是发生在片尾字幕之后的场景。此外，地点位于新章舞台远方的东京塔之上；并且在对话 2与该独白中，大场奈奈与神乐光的服装均为 Revue 服；再结合神乐光“我们已经在舞台之上”的发言，可以认为这是从对话 2 延续至剧场版的过渡场面。因此，将其固定放在总集篇的最后。基于以上理由，若以紧前的 Revue 剧中歌歌词与紧后台词之间的对应关系以及对话地点为轴重新排列，就会得到如图右侧所示的顺序。</p>
+<p>在这一顺序下，蓝 4 末尾长颈鹿所宣告的“离正式开演还有 5 分钟”中的“正式开演”，存在两种可能。</p>
+<p>第一种可能：它指的是总集篇作品中，从蓝 4 之后约 5 分 30 秒处的大场奈奈台词“这一天，舞台少女大场奈奈诞生了。”开始的、她的再演。</p>
+<p>第二种可能：由于将蓝 5 及之后的〈蓝色舞台〉以及对话、舞台少女之死、独白合计起来为 4 分 56 秒，因此它可能指向“总集篇的结束＝剧场版（或与之相当的并行时间）的开始”。<sup class="footnote-ref"><a href="#fn3" id="fnref3">[3]</a></sup></p>
+<p>若认为是前者，则各〈蓝色舞台〉之间的连续性与一致性较为欠缺。此外，尽管“舞台少女大场奈奈”的诞生确实与她的再演开始密切相关，但严格而言，她的再演开始应当是在获得“星之王冠”的时刻。不过，从诞生到获得星之王冠为止已过去 10 分 40 秒，因此该理论似乎略显牵强。</p>
+<p>若认为是后者，则通过对〈蓝色舞台〉之间的顺序进行重排，不仅产生了连续性与一致性，时长也更接近 5 分钟。再结合前述“三部曲中各作品时间轴与世界线的隔离，亦即戏剧并行性与再现性之表出这一侧面”，可以认为“蓝色舞台”中的大场奈奈，是从并非总集篇的另一条时间轴/世界线（即很可能是剧场版的时间轴/世界线）来观看总集篇的。正因如此，她才会在剧场版中说出“那天，我看到了，在再演的尽头，是我们的死亡”，并最终付诸行动的吧。综上所述，本文采用后一种假设。</p>
+<h1>“皆杀的 Revue”中的三条地铁线</h1>
+<p>基于此前的讨论，即三部曲彼此是具有并行性的不同演出场次。本文进一步考察剧场版“皆杀的 Revue”中出现的三条地铁线路。</p>
+<p>在剧场版“皆杀的 Revue”中，面向地铁行进方向时，从右到左依次并列着三条轨道：“照明器材线”、“舞台少女线”、“大场奈奈的大刀线”。可以认为，这三条轨道分别象征 TV 版、剧场版与总集篇。</p>
+<p>具体而言：清晰描绘了大场奈奈亦会转入幕后工作的 TV 版，对应“照明器材线”；作为“现在进行时”的剧场版，对应“舞台少女线”；而大场奈奈“欣赏”且部分“出演”的、承接至剧场版的总集篇，则对应“大场奈奈的大刀线”。</p>
+<h1>结语</h1>
+<p>本文所考察的动画系列作品《少女☆歌剧 Revue Starlight》，具有一种宛如戏剧般的复杂结构：各部作品相互之间既具有如戏剧般可重复上演的再现性，彼此互补，同时又具有并行性，凸显出不同时间轴与世界线的差异，仿佛呈现出不同场次演出的面貌。</p>
+<p>虽已作如上探讨，但文中仍有不少地方逻辑上的跳跃和单纯的推测；此外，《少女☆歌剧 Revue Starlight》除动画之外尚有大量其他作品形态，期待未来能在更进一步的讨论与阐明之中，获得更清晰的理解与解释。</p>
+<h1>作者评论（2022/10/10）</h1>
+<p>这是一部每次观看都会让我获得鼓舞的作品——它总会让我想到“我也必须再向前迈出一步”“再多努力一步就好”。我对它的喜爱已到了近乎痴狂的程度，喜欢、喜欢、喜欢得无法自已，因此得以参加本次企划。</p>
+<p>与对待其他作品时一样，我基本上刻意不去阅读他人的考察的文章；在少歌上也一直保持着这种状态。也正因如此，我一方面期待能借由此次参与拜读诸位的论文，另一方面又担心自己是否会成为“井底之蛙”，做出不得要领的发言，并为此度日惴惴。</p>
+<p>终于，她们走下高塔，开始踏上新的旅途。从电视动画开播前便一路支持至今的我，却依旧被她们夺去目光、灼烧双眼，仍然像是被幽闭在“命运的舞台”之中。我也明白自己必须迈向下一座舞台，但同时又隐约觉得，还想再继续这支“轮回”一段时间。无论何时，我都相信：只要来到这座塔，便一定还能与诸位再会。</p>
+<p>“因此，请在约定之塔等着我。”</p>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>《Radio Starlight》第 167 回　29 分 30 秒左右～。作者注 <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn2" class="footnote-item"><p>结合来看，总集篇小册子中标有“舞台少女”的页面起到分隔角色介绍页与工作人员评论页的作用。其上绘有三个圆并列的独特图形，可能象征着三部作中各作品时间轴或世界线的彼此独立。作者注 <a href="#fnref2" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn3" class="footnote-item"><p>蓝 5 长度约 80 秒，蓝 6 长度约 35 秒，对话 1 到蓝 7 长度约 150 s，独白长度约 35 秒。作者未披露具体口径，不削弱主要结论。译者注。 <a href="#fnref3" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
+
+                
+            </div>
+            <hr/>
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/%E5%89%A7%E5%9C%BA%E7%89%88/">
+                                    <span class="chip bg-color">剧场版</span>
+                                </a>
+                            
+                                <a href="/tags/%E8%A7%A3%E9%87%8A%C2%B7%E8%AF%BB%E8%A7%A3/">
+                                    <span class="chip bg-color">解释·读解</span>
+                                </a>
+                            
+                                <a href="/tags/%E6%97%B6%E9%97%B4%E8%BD%B4/">
+                                    <span class="chip bg-color">时间轴</span>
+                                </a>
+                            
+                                <a href="/tags/TV%E7%89%88/">
+                                    <span class="chip bg-color">TV版</span>
+                                </a>
+                            
+                                <a href="/tags/%E5%86%8D%E7%94%9F%E4%BA%A7%E6%80%BB%E9%9B%86%E7%AF%87/">
+                                    <span class="chip bg-color">再生产总集篇</span>
+                                </a>
+                            
+                                <a href="/tags/%E7%9A%86%E6%9D%80%E7%9A%84Revue/">
+                                    <span class="chip bg-color">皆杀的Revue</span>
+                                </a>
+                            
+                                <a href="/tags/%E4%B8%96%E7%95%8C%E7%BA%BF/">
+                                    <span class="chip bg-color">世界线</span>
+                                </a>
+                            
+                                <a href="/tags/%E5%88%97%E8%BD%A6-%E7%BA%BF%E8%B7%AF/">
+                                    <span class="chip bg-color">列车/线路</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/13/06-nana-timeline/">
+                    <div class="card-image">
+                        
+                        <img src="https://assets.st-note.com/production/uploads/images/124170342/rectangle_large_type_2_4a610c61b7092308a14f44cf47574b12.png" class="responsive-img" alt="关于大场奈奈和剧场版的时间线">
+                        
+                        <span class="card-title">关于大场奈奈和剧场版的时间线</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2025-12-19
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%C2%A7-13-Project-Revue-Starlight/" class="post-category">
+                                    § 13 Project Revue Starlight
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E5%89%A7%E5%9C%BA%E7%89%88/">
+                        <span class="chip bg-color">剧场版</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%A4%A7%E5%9C%BA%E5%A5%88%E5%A5%88/">
+                        <span class="chip bg-color">大场奈奈</span>
+                    </a>
+                    
+                    <a href="/tags/%E8%A7%A3%E9%87%8A%C2%B7%E8%AF%BB%E8%A7%A3/">
+                        <span class="chip bg-color">解释·读解</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%86%8D%E7%94%9F%E4%BA%A7%E6%80%BB%E9%9B%86%E7%AF%87/">
+                        <span class="chip bg-color">再生产总集篇</span>
+                    </a>
+                    
+                    <a href="/tags/%E6%97%B6%E9%97%B4%E7%BA%BF/">
+                        <span class="chip bg-color">时间线</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                本篇&nbsp;<i class="far fa-dot-circle"></i>
+            </div>
+            <div class="card">
+                <a href="/13/07-parallelism-and-reproducibility/">
+                    <div class="card-image">
+                        
+                        <img src="https://assets.st-note.com/production/uploads/images/124170342/rectangle_large_type_2_4a610c61b7092308a14f44cf47574b12.png" class="responsive-img" alt="关于舞台的并行性与再现性的一项考察——通过比较动画《少女☆歌剧 Revue Starlight》的各个作品">
+                        
+                        <span class="card-title">关于舞台的并行性与再现性的一项考察——通过比较动画《少女☆歌剧 Revue Starlight》的各个作品</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2026-06-09
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%C2%A7-13-Project-Revue-Starlight/" class="post-category">
+                                    § 13 Project Revue Starlight
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E5%89%A7%E5%9C%BA%E7%89%88/">
+                        <span class="chip bg-color">剧场版</span>
+                    </a>
+                    
+                    <a href="/tags/%E8%A7%A3%E9%87%8A%C2%B7%E8%AF%BB%E8%A7%A3/">
+                        <span class="chip bg-color">解释·读解</span>
+                    </a>
+                    
+                    <a href="/tags/%E6%97%B6%E9%97%B4%E8%BD%B4/">
+                        <span class="chip bg-color">时间轴</span>
+                    </a>
+                    
+                    <a href="/tags/TV%E7%89%88/">
+                        <span class="chip bg-color">TV版</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%86%8D%E7%94%9F%E4%BA%A7%E6%80%BB%E9%9B%86%E7%AF%87/">
+                        <span class="chip bg-color">再生产总集篇</span>
+                    </a>
+                    
+                    <a href="/tags/%E7%9A%86%E6%9D%80%E7%9A%84Revue/">
+                        <span class="chip bg-color">皆杀的Revue</span>
+                    </a>
+                    
+                    <a href="/tags/%E4%B8%96%E7%95%8C%E7%BA%BF/">
+                        <span class="chip bg-color">世界线</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%88%97%E8%BD%A6-%E7%BA%BF%E8%B7%AF/">
+                        <span class="chip bg-color">列车/线路</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+    <div class="container row center-align" style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2019-2026</span>
+            
+            <span id="year">2019</span>
+            <a href="/about" target="_blank"></a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/Starlight-Thesis-Reviewers" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fa-brands fa-github"></i>
+    </a>
+
+
+
+    <a href="https://space.bilibili.com/3546846827907391" class="tooltipped" target="_blank" data-tooltip="Bilibili账号" data-position="top" data-delay="50">
+        <i class="fa-brands fa-bilibili"></i>
+    </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fa-solid fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+	
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>
