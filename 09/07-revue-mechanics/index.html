@@ -1,0 +1,1219 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="试着用高中物理来推导一下Revue中使用的能量吧！——最后的台词, 圣翔毕业论文审查组">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>试着用高中物理来推导一下Revue中使用的能量吧！——最后的台词 | 圣翔毕业论文审查组</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon-starlight.svg">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/avatar.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">圣翔毕业论文审查组</span>
+                </a>
+            </div>
+            
+
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags/" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>关键词</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories/" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>章节</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives/" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about/" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends/" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/avatar.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">圣翔毕业论文审查组</div>
+        <div class="logo-desc">
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			关键词
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			章节
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://assets.st-note.com/production/uploads/images/115968818/rectangle_large_type_2_39f2ec90e5393b130ee73ef7046e7c87.jpeg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">试着用高中物理来推导一下Revue中使用的能量吧！——最后的台词</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E5%89%A7%E5%9C%BA%E7%89%88/">
+                                <span class="chip bg-color">剧场版</span>
+                            </a>
+                        
+                            <a href="/tags/%E6%80%A8%E6%81%A8%E7%9A%84Revue/">
+                                <span class="chip bg-color">怨恨的Revue</span>
+                            </a>
+                        
+                            <a href="/tags/%E8%B0%83%E6%9F%A5%E9%AA%8C%E8%AF%81/">
+                                <span class="chip bg-color">调查验证</span>
+                            </a>
+                        
+                            <a href="/tags/%E6%9C%80%E5%90%8E%E7%9A%84%E5%8F%B0%E8%AF%8D/">
+                                <span class="chip bg-color">最后的台词</span>
+                            </a>
+                        
+                            <a href="/tags/%E7%89%A9%E7%90%86%E5%AD%A6/">
+                                <span class="chip bg-color">物理学</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%C2%A7-09-%E6%9C%80%E5%90%8E%E7%9A%84%E5%8F%B0%E8%AF%8D/" class="post-category">
+                                § 09 最后的台词
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2026-08-19
+                </div>
+                
+
+                
+
+                
+
+                
+
+                
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user"> 原文作者: </i>
+                </span>
+                <span class="reprint-info">
+                    ノーラ
+                    
+                        <a href="https://x.com/noradhi_nu" rel="external nofollow noreferrer" target="_blank">
+                        <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                    
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fa-solid fa-link">原文链接: </i>
+                </span>
+                <span class="reprint-info">
+                    
+                        <a href="https://note.com/starlight_paper/n/n4918e97b1471" rel="external nofollow noreferrer" target="_blank">https://note.com/starlight_paper/n/n4918e97b1471</a>
+                    
+                </span>
+            </div>
+            
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fa-solid fa-pencil"> 译者: </i>
+                </span>
+                <span class="reprint-info">
+                    LChener
+                    
+                        <a href="https://space.bilibili.com/178163886" rel="external nofollow noreferrer" target="_blank">
+                        <i class="fa-brands fa-bilibili"></i>
+                        </a>
+                    
+                </span>
+            </div>
+
+            
+                <div class="reprint__author">
+                    <span class="reprint-meta" style="font-weight: bold;">
+                        <i class="fa-solid fa-ruler"> 校对: </i>
+                    </span>
+                    <span class="reprint-info">
+                        星河
+                        
+                    </span>
+                </div>
+            
+
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本文一切版权归原文作者所有，如有侵权请联系删除。<br>
+                    本記事の著作権はその著作者に帰属し、権利侵害となる場合はご連絡ください。
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h2 id="前言">前言</h2>
+<p>本文从物理角度考察了《剧场版 少女☆歌剧 Revue Starlight》（以下简称剧场版）中的一个场景。笔者希望各位能将它当作其他各位厚重论文之间的一份轻松调剂，像读《空想科学读本》<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>一样乐在其中；若能如此，不胜荣幸。</p>
+<p>那么，本次考察的主题是“在最后的台词中，东京塔爆发所需的能量究竟有多大”？长颈鹿曾说过，自己是舞台少女们的燃料。正如其所言，长颈鹿的身体被火焰包围，它用自身的火焰将爱城华恋通往东京塔的轨道染得通红。为了将闪耀传递给观众，长颈鹿主动化为燃料，舞台装置因它而启动。而要论其中最华丽的演出，恐怕就是爆发后断成两半的东京塔吧。长颈鹿拼上性命打造出的舞台中最大的亮点，究竟需要多少燃料，就让我们一同见证吧。</p>
+<h2 id="原理解说">原理解说</h2>
+<p>本章对机械能守恒进行讲解。另外，因笔者能力有限，本文所涉及的物理内容控制在高中物理水平。机械能是指“不受除重力<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup>以外的力作用时守恒的、表示物体运动状态的物理量”。</p>
+<p>说到能量，最好把它想象成一种闪耀般的东西。这里所讨论的机械能包括动能和势能<sup class="footnote-ref"><a href="#fn3" id="fnref3">[3]</a></sup>两种，分别如下所示：</p>
+<p>$$<br>
+\begin{aligned}<br>
+动能：E&amp;=\frac{1}{2}mv^2 \<br>
+势能：E&amp;=mgh<br>
+\end{aligned}<br>
+$$</p>
+<p>其中：</p>
+<p>$$<br>
+\begin{aligned}<br>
+E&amp;: 能量 &amp;[J] \<br>
+m&amp;: 物体的质量 &amp;[kg] \<br>
+v&amp;: 物体的速度 &amp;[m/s] \<br>
+g&amp;: 重力加速度 &amp;[m/s^2] \<br>
+h&amp;: 物体的高度 &amp;[m]<br>
+\end{aligned}<br>
+$$</p>
+<p>简而言之，就是“更快、更高，就会更闪耀”。只要没有重力以外的力作用于物体，物体的动能与势能的总和就保持不变。</p>
+<p>这里用一个例子实际计算一下。设一辆以时速 100 km<sup class="footnote-ref"><a href="#fn4" id="fnref4">[4]</a></sup>从清水寺舞台水平飞出的电饰卡车落地瞬间的速度。已知其质量为 $2×10^4 kg$（$20 t$），时速 $100 km$ 换算为秒速约 $27.8 m$，重力加速度为 $9.8 m/s^2$，清水寺舞台的高度为 $12 m$ <sup class="footnote-ref"><a href="#fn5" id="fnref5">[5]</a></sup>，因此可将落地瞬间的速度设为未知数 $v [m/s]$ 求出。</p>
+<p><img src="/local-imgs/09-07/%E8%AF%95%E7%9D%80%E7%94%A8%E9%AB%98%E4%B8%AD%E7%89%A9%E7%90%86%E6%9D%A5%E6%8E%A8%E5%AF%BC%E4%B8%80%E4%B8%8BRevue%E4%B8%AD%E4%BD%BF%E7%94%A8%E7%9A%84%E8%83%BD%E9%87%8F%E5%90%A7%EF%BC%81-%E6%B8%85%E6%B0%B4%E8%88%9E%E5%8F%B0.webp" alt=""></p>
+<div style="text-align: center">图 1　从清水舞台冲出的卡车<br/>（图均为笔者绘制。公式则由主办方根据笔者的资料制作。）</div>
+<p>在平抛运动的过程中，卡车所受的力仅为重力，因此机械能守恒。据此，下列等式成立：</p>
+<p>冲出前：</p>
+<p>$$<br>
+\begin{aligned}<br>
+动能&amp;:\frac{1}{2}×20000×27.8^2 \<br>
+势能&amp;:20000×9.8×12<br>
+\end{aligned}<br>
+$$</p>
+<p>落地时：</p>
+<p>$$<br>
+\begin{aligned}<br>
+动能&amp;:\frac{1}{2}×20000×v^2 \<br>
+势能&amp;:0<br>
+\end{aligned}<br>
+$$</p>
+<p>则有：</p>
+<p>$$<br>
+\begin{aligned}<br>
+\frac{1}{2}×27.8<sup>2+×9.8×12&amp;=\frac{1}{2}×20000×v</sup>2+0 \<br>
+v&amp;=\sqrt{27.8^2+2×9.8×12} \<br>
+v&amp;= 31.75 [m/s]<br>
+\end{aligned}<br>
+$$</p>
+<p>将其换算成时速，为 $114.3 km/h$，即为卡车落地瞬间时的速度。这里使用了机械能守恒定律来计算速度，下面使用该公式进行本题的能量推导计算。</p>
+<h2 id="对相应场景的考察">对相应场景的考察</h2>
+<p>下面，对东京塔的爆发场景进行计算与考察。东京塔爆发时的情形如下图所示。关于质量与高度的推导，方法是将东京塔高度 $333 m$<sup class="footnote-ref"><a href="#fn6" id="fnref6">[6]</a></sup>与质量 $3600 t$ <sup class="footnote-ref"><a href="#fn7" id="fnref7">[7]</a></sup>作为已知值，并根据爆发场景画面上的比例计算得出（计算过程从略）。</p>
+<p>速度是通过测量画面上的移动距离（东京塔的位置与尖端刺入位置之间的距离）和动画中的所需时间（从东京塔爆发到尖端刺入 Position 0 为止）来推导得出的。此外，塔身碎片的质量是通过从总质量中减去上部（刺入 Position 0 的部分）和下部（留在地面上的部分）的质量来求得的。</p>
+<p><img src="/local-imgs/09-07/%E8%AF%95%E7%9D%80%E7%94%A8%E9%AB%98%E4%B8%AD%E7%89%A9%E7%90%86%E6%9D%A5%E6%8E%A8%E5%AF%BC%E4%B8%80%E4%B8%8BRevue%E4%B8%AD%E4%BD%BF%E7%94%A8%E7%9A%84%E8%83%BD%E9%87%8F%E5%90%A7%EF%BC%81-%E4%B8%9C%E4%BA%AC%E5%A1%94%E7%88%86%E5%8F%91.webp" alt=""></p>
+<div style="text-align: center">图 2 爆发的东京塔</div>
+<p>此外，对于画面中所绘东京塔与现实中港区芝公园的东京塔之间纵横比不一致的问题，我们通过将画面中塔体下部的高度视作观景台高度，并据此进行比例计算来加以处理。</p>
+<p>本次探讨的是爆炸瞬间塔体上部和被喷向高空的塔身碎片所被赋予的能量。各自的推导过程如下。</p>
+<p>假设塔的上部因爆炸而沿抛物线轨迹飞出。这里，斜抛运动可分解为：物体被抛起后落回同一高度的匀变速直线运动，以及物体从抛出位置到落点之间所做的水平匀速运动。因此，塔上部在水平方向上的速度是恒定的。由此，根据移动距离和时间，即可求出塔上部到达抛物线顶点的瞬间，即竖直方向速度为零的瞬间。</p>
+<p>抛物线到达顶点瞬间的高度也可通过在画面上测量求得，因此，分别求出该瞬间动能和势能所需的数值便已齐备。求出二者之和，即可推导出该运动中的机械能。</p>
+<p>$$<br>
+\begin{aligned}<br>
+E&amp;=\frac{1}{2}×1068108.758×44.02^2+1068108.758×9.8×368.809 \<br>
+&amp;=4895270824 \<br>
+&amp;=4.90×10^9[J]<br>
+\end{aligned}<br>
+$$</p>
+<p>关于塔身碎片，可以通过测量其在该场景中上升的时间来估算上升速度。在爆炸瞬间，塔身碎片未发生移动，不具有势能，因此只需考虑动能，可以如下求出：</p>
+<p>$$<br>
+\begin{aligned}<br>
+E&amp;=\frac{1}{2}×1084676.047×135.16^2 \<br>
+&amp;=9907553365 \<br>
+&amp;=9.91×10^9[J] \<br>
+\end{aligned}<br>
+$$</p>
+<p>塔顶和塔身碎片所受能量之和为 $15 GJ$。</p>
+<p>这是剧场版中最大的高潮场景所使用的能量。如果换算成 TNT 当量，大约是 $3.5$ 吨。您可以想象，这个场景使用了大量的燃料。如果以地震常用的能量表示方式——震级来换算，大约相当于里氏 3.6 级，所以电影院的座位会摇晃也是可以理解的。</p>
+<p>此外，这是题外话，以秒速 $135.16 m/s$ 发射的塔身碎片，在动能全部转化为势能的瞬间，即从地面（塔体底部）达到 $984.50 m$（计算省略）时达到最高点并开始下落。然后，碎片将在爆炸后 $190.21$ 秒，即大约 3 分钟后落到地面<sup class="footnote-ref"><a href="#fn8" id="fnref8">[8]</a></sup>。……这样，华恋和光将无法及时躲避而被卷入其中。这不是悠闲谈话的时候。无论如何，希望长颈鹿能竭尽最后的力量，为塔楼碎片增加足够的能量，使其能够被运送到宇宙中。</p>
+<h2 id="后记">后记</h2>
+<p>效果如何呢？这次我们简单地推导了长颈鹿亲自牺牲所打造的舞台装置所使用的巨大能量中的一部分。剧场版中还有许多能促进物理解释的地方，感兴趣的人不妨计算一下，或许会很有趣。另外，由于我本人还是个不成熟的学生，能够处理的物理范围有限，对于物体变形等此次场景中未考虑到的部分还有很多，但希望将来能够熟练掌握。那么，愿舞台创造科的各位能有更大的飞跃，就此结束这篇文章。</p>
+<h2 id="组员评论（2026-8-19）">组员评论（2026/8/19）</h2>
+<h3 id="道山神連">道山神連</h3>
+<p>由于实在看不懂原文的计算，这里我给出一版独立的测量和计算过程。这里我们认为进度条时间不能作为实际时长的参考，因此计算中不会使用时间，而是只在远景图像上测量画面比例，并使用现实中东京塔的大小和质量进行计算。</p>
+<p>东京塔总高度 $H=333 ~{\rm m}$，总重量 $M=3.6\times 10^6 ~{\rm kg}$。断裂处为 main deck，高度 $h_1=150 ~{\rm m}$。</p>
+<p>估计上半部分质量：</p>
+<p>假设东京塔是均匀的无底的四面体，每一面近似为等腰三角形。忽略两个展望台的质量。从而上半部分的质量为</p>
+<p>$$ m_1 = \left( \frac{H-h_1}{H} \right)^2 M = 1.09 \times 10^6 ~{\rm kg} $$</p>
+<p>上半部分质心初始高度为</p>
+<p>$$ h_{c1} = \frac{1}{2} (h_1 + H) = 241.5 ~{\rm m} $$</p>
+<p>测量截图得到最高点高度为 $h_1$ 的 $3.13$ 倍，即抛射的最高点 $h_{\rm proj}=469.71 ~{\rm m}$。最高点与东京塔远端的水平距离为 $h_1$ 的 $1.47$ 倍。使用谷歌地图测距工具测出底边的长度 $L=92 ~{\rm m}$。，从而到最高点处质心的水平位移为 $x=1.47h_1-L/2=175.15 ~{\rm m}$。</p>
+<p><img src="/local-imgs/09-07/%E8%AF%95%E7%9D%80%E7%94%A8%E9%AB%98%E4%B8%AD%E7%89%A9%E7%90%86%E6%9D%A5%E6%8E%A8%E5%AF%BC%E4%B8%80%E4%B8%8BRevue%E4%B8%AD%E4%BD%BF%E7%94%A8%E7%9A%84%E8%83%BD%E9%87%8F%E5%90%A7%EF%BC%81-%E4%B8%9C%E4%BA%AC%E5%A1%94%E5%8A%A8%E8%83%BD.png" alt=""></p>
+<p>从而</p>
+<p>$$ x = v_h t $$</p>
+<p>$$ h_{\rm proj} - h_{c1} = \frac{1}{2} v_v t = \frac{1}{2} gt^2 $$</p>
+<p>得到</p>
+<p>$$ v_v = \sqrt{2g (h_{\rm proj} - h_{c1})} = 66.88 ~{\rm m/s} $$</p>
+<p>$$ v_h = \frac{x}{t} = x\sqrt{\frac{g}{2(h_{\rm proj} - h_{c1})}} = 25.67 ~{\rm m/s} $$</p>
+<p>上半部分获得的动能</p>
+<p>$$ E = \frac{1}{2}m_1 \sqrt{v_v<sup>2+v_h</sup>2} = 2.79\times 10^9 ~{\rm J} $$</p>
+<p>量级上和原文的结论一致。</p>
+<h3 id="LChener">LChener</h3>
+<p>在上文的“题外话”中，作者可能是先通过像素点和现实比例计算位移，并根据帧数换算时间，从而算出速度 $v_0’=135.16 m/s$</p>
+<p>顺着作者的思路，在计算高度时可由机械能守恒定律得：</p>
+<p>$$<br>
+\begin{aligned}<br>
+\frac{1}{2}mv_0’^2&amp;=mgh’’ \<br>
+h’‘&amp;=\frac{v_0’^2}{2g} \<br>
+&amp;=\frac{135.16^2}{2*9.8}\<br>
+&amp;≈932.05[m]<br>
+\end{aligned}<br>
+$$</p>
+<p>这与文中写的 $h’=984.50$ 之间存在 $52.45m$ 的高度差</p>
+<p>在计算时间时，由 $h=\frac{1}{2}gt^2$ 得：</p>
+<p>$$<br>
+\begin{aligned}<br>
+h’‘&amp;=\frac{1}{2}gt’‘^2 \<br>
+t’‘&amp;=\sqrt{\frac{2h’‘}{g}} \<br>
+t’'&amp;=\sqrt{\frac{2×932.05}{9.8}}\<br>
+&amp;=\sqrt{190.21}\<br>
+&amp;≈13.79[s]<br>
+\end{aligned}<br>
+$$</p>
+<p>由此，作者在计算全程时间时有可能错将“乘 2”记作了“平方”，或忘记了开根且没有乘 2。实际单程时间应为 $13.79s$，全程时间应为 $27.58s$。</p>
+<p>另外，假设作者真是用 $h=\frac{v_0^2}{2g}$ 算的高度，那问题只可能出在 $v_0$ 上</p>
+<p>将 $h’'=984.50m$ 代入 $h=\frac{v_0^2}{2g}$ ，有：</p>
+<p>$$<br>
+\begin{aligned}<br>
+h’&amp;=\frac{v_0’‘^2}{2g} \<br>
+v_0’‘&amp;=\sqrt{2gh’}\<br>
+&amp;=\sqrt{2×9.8×984.50}\<br>
+&amp;≈138.91[m/s]<br>
+\end{aligned}<br>
+$$</p>
+<p>这与文中写的 $v_0’=135.16m/s$ 之间同样存在误差</p>
+<p>回看原片发现，塔身碎片向上喷发的场景中镜头并未移动，因此更有可能是在使用 $v=\frac{d}{t}$ 计算时 $t$ 出了问题。</p>
+<p>设作者计算速度时选取的位移为 $d$，两次测量时选取的时间为 $t_1$ 和 $t_2$ ($t_1&lt;t_2$)，可得 $v’‘_0=\frac{d}{t_1}=138.91m/s$，$v’_0=\frac{d}{t_2}=135.16m/s$，并记 $Δt=t_2-t_1$，则有：</p>
+<p>$$<br>
+\begin{aligned}<br>
+\frac{t_1}{Δt}&amp;=\frac{\frac{d}{v’‘_0}}{\frac{d}{v_0’}-\frac{d}{v’‘_0}}\<br>
+&amp;=\frac{v’_0}{v’‘_0-v_0’}\<br>
+&amp;=\frac{135.16}{138.91-135.16}\<br>
+&amp;≈36.04<br>
+\end{aligned}<br>
+$$</p>
+<p>$$<br>
+\begin{aligned}<br>
+\frac{t_2}{Δt}&amp;=\frac{v’‘_0}{v’‘_0-v_0’}\<br>
+&amp;=\frac{138.91}{138.91-135.16}\<br>
+&amp;≈37.04<br>
+\end{aligned}<br>
+$$</p>
+<p>因此，作者有可能前后分别使用了 $36 帧$ 和 $37 帧$ 两个时间，算了两次速度，写在文中的和代入计算的不是同一个值。</p>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>编者注：《空想科学読本》是日本作家柳田理科雄创作的科幻科学考据类图书，该书以科学视角验证动画、漫画及特摄作品中的虚构设定诸如奥特曼变身过程的细胞分裂能量需求、怪兽以 1.5 马赫飞行的物理矛盾、哆啦 A 梦竹蜻蜓的设计问题、龟派气功的能量实现、《海贼王》中索隆三刀流的力学承受等场景。 <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn2" class="footnote-item"><p>严格来说，这指代的是保守力（一种与物体移动路径无关、保持恒定的力），但仅限此次，可将保守力视为重力。 <a href="#fnref2" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn3" class="footnote-item"><p>编者注：本文中的“势能”均为重力势能。 <a href="#fnref3" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn4" class="footnote-item"><p>电饰卡车的速度：“时速一百”＝100 km/h。石动双叶（CV：生田辉）、花柳香子（CV：伊藤彩沙）《任性 Highway》、作词：中村彼方。 <a href="#fnref4" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn5" class="footnote-item"><p>引自<a href="https://www.kiyomizudera.or.jp/yodan/vol1/index_2.html">清水寺官网</a>：清水舞台高度为 $12 m$。 <a href="#fnref5" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn6" class="footnote-item"><p>根据<a href="https://www.tokyotower.co.jp/">东京塔官网</a>，高度为 $333 m$。 <a href="#fnref6" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn7" class="footnote-item"><p>出自《知识的宝库！目瞪口呆！图书馆》<a href="https://www.ntv.co.jp/megaten/archive/library/date/05/12/1211.html">第 810 回</a>，重量 3600 吨。 <a href="#fnref7" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn8" class="footnote-item"><p>编者注：疑似有误<s>但这里太小了写不下</s>，详见文末。 <a href="#fnref8" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
+
+                
+            </div>
+            <hr/>
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/%E5%89%A7%E5%9C%BA%E7%89%88/">
+                                    <span class="chip bg-color">剧场版</span>
+                                </a>
+                            
+                                <a href="/tags/%E6%80%A8%E6%81%A8%E7%9A%84Revue/">
+                                    <span class="chip bg-color">怨恨的Revue</span>
+                                </a>
+                            
+                                <a href="/tags/%E8%B0%83%E6%9F%A5%E9%AA%8C%E8%AF%81/">
+                                    <span class="chip bg-color">调查验证</span>
+                                </a>
+                            
+                                <a href="/tags/%E6%9C%80%E5%90%8E%E7%9A%84%E5%8F%B0%E8%AF%8D/">
+                                    <span class="chip bg-color">最后的台词</span>
+                                </a>
+                            
+                                <a href="/tags/%E7%89%A9%E7%90%86%E5%AD%A6/">
+                                    <span class="chip bg-color">物理学</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/09/05-revue-starlight-reproduction/">
+                    <div class="card-image">
+                        
+                        <img src="https://assets.st-note.com/production/uploads/images/115968818/rectangle_large_type_2_39f2ec90e5393b130ee73ef7046e7c87.jpeg" class="responsive-img" alt="从成瘾康复计划看少歌剧场版——何为“我，再生产”">
+                        
+                        <span class="card-title">从成瘾康复计划看少歌剧场版——何为“我，再生产”</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2026-03-08
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%C2%A7-09-%E6%9C%80%E5%90%8E%E7%9A%84%E5%8F%B0%E8%AF%8D/" class="post-category">
+                                    § 09 最后的台词
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E5%89%A7%E5%9C%BA%E7%89%88/">
+                        <span class="chip bg-color">剧场版</span>
+                    </a>
+                    
+                    <a href="/tags/%E7%88%B1%E5%9F%8E%E5%8D%8E%E6%81%8B/">
+                        <span class="chip bg-color">爱城华恋</span>
+                    </a>
+                    
+                    <a href="/tags/%E8%A7%A3%E9%87%8A%C2%B7%E8%AF%BB%E8%A7%A3/">
+                        <span class="chip bg-color">解释·读解</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%BF%83%E7%90%86%E5%AD%A6/">
+                        <span class="chip bg-color">心理学</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%86%8D%E7%94%9F%E4%BA%A7/">
+                        <span class="chip bg-color">再生产</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/09/09-revue-starlight-final-lines/">
+                    <div class="card-image">
+                        
+                        <img src="https://assets.st-note.com/production/uploads/images/115968818/rectangle_large_type_2_39f2ec90e5393b130ee73ef7046e7c87.jpeg" class="responsive-img" alt="可能性的收敛 / 最后的台词解读">
+                        
+                        <span class="card-title">可能性的收敛 / 最后的台词解读</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2026-03-19
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%C2%A7-09-%E6%9C%80%E5%90%8E%E7%9A%84%E5%8F%B0%E8%AF%8D/" class="post-category">
+                                    § 09 最后的台词
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E5%89%A7%E5%9C%BA%E7%89%88/">
+                        <span class="chip bg-color">剧场版</span>
+                    </a>
+                    
+                    <a href="/tags/%E7%88%B1%E5%9F%8E%E5%8D%8E%E6%81%8B/">
+                        <span class="chip bg-color">爱城华恋</span>
+                    </a>
+                    
+                    <a href="/tags/%E8%A7%A3%E9%87%8A%C2%B7%E8%AF%BB%E8%A7%A3/">
+                        <span class="chip bg-color">解释·读解</span>
+                    </a>
+                    
+                    <a href="/tags/%E6%9C%80%E5%90%8E%E7%9A%84%E5%8F%B0%E8%AF%8D/">
+                        <span class="chip bg-color">最后的台词</span>
+                    </a>
+                    
+                    <a href="/tags/Revue%E6%AD%A6%E5%99%A8/">
+                        <span class="chip bg-color">Revue武器</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+    <div class="container row center-align" style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2019-2026</span>
+            
+            <span id="year">2019</span>
+            <a href="/about" target="_blank"></a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/Starlight-Thesis-Reviewers" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fa-brands fa-github"></i>
+    </a>
+
+
+
+    <a href="https://space.bilibili.com/3546846827907391" class="tooltipped" target="_blank" data-tooltip="Bilibili账号" data-position="top" data-delay="50">
+        <i class="fa-brands fa-bilibili"></i>
+    </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fa-solid fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+	
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>
