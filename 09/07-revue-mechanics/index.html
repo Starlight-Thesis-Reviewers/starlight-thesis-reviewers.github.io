@@ -982,6 +982,27 @@ $$</p>
 </main>
 
 
+<script>
+    // markdown-it 的 breaks=true 会把多行公式中的换行转换成 <br>，
+    // 先将其还原，避免 MathJax 无法跨 HTML 标签识别同一个公式块。
+    (function () {
+        var articleContent = document.getElementById('articleContent');
+        if (!articleContent) return;
+
+        articleContent.innerHTML = articleContent.innerHTML.replace(/\$\$([\s\S]*?)\$\$/g, function (formula, body) {
+            body = body.replace(/\\\s*<br\s*\/?>/gi, '\\\\\n');
+            body = body.replace(/<br\s*\/?>/gi, '\n');
+            return '$$' + body + '$$';
+        });
+    })();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$', '$'], ['\(', '\)']]}
+    });
+</script>
+
 
 
     <footer class="page-footer bg-color">
